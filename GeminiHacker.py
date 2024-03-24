@@ -28,7 +28,7 @@ safety_settings = settings.safety_settings
 
 # * GenAI'ı yapılandıralım
 # ? Add your API_KEY - GENAI_API_KEY
-genai.configure(api_key="AIzaSyBrxILyophga0urTWLGB8Of6z5jpF8VKhE") # change here before push!
+genai.configure(api_key="GENAI_API_KEY") 
 
 # Modeli başlatalım
 model = genai.GenerativeModel(model_name="gemini-1.0-pro-001",
