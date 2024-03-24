@@ -27,7 +27,8 @@ generation_config = settings.generation_config
 safety_settings = settings.safety_settings
 
 # * GenAI'ı yapılandıralım
-genai.configure(api_key="AIzaSyBrxILyophga0urTWLGB8Of6z5jpF8VKhE")
+# ? Add your API_KEY - GENAI_API_KEY
+genai.configure(api_key="AIzaSyBrxILyophga0urTWLGB8Of6z5jpF8VKhE") # change here before push!
 
 # Modeli başlatalım
 model = genai.GenerativeModel(model_name="gemini-1.0-pro-001",
@@ -72,7 +73,6 @@ try:
             print("- \\end: End the conversation.")
             print("\nModules:")
             print("- \\scanf: Scan the given file usage: \scanf $FILEPATH")
-            print("- \\scant: End the conversation.")
             continue
 
         elif user_input.lower() == "\\name":
@@ -112,10 +112,3 @@ try:
 except KeyboardInterrupt:
     print("\nGoodbye!")
 
-
-"""
-Kullanıcdan başarı ile dosyya alınıp açılabiliyor.
-
-Yapılacaklar: açılan dosyayı ai'e ver ve kontrol ettir.
-
-"""
