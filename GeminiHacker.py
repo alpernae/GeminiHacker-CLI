@@ -70,7 +70,7 @@ try:
             print("- \\version: Get my version.")
             print("- \\info: Get information about me.")
             print("- \\end: End the conversation.")
-            print("\n\Modules:")
+            print("\nModules:")
             print("- \\scanf: Scan the given file usage: \scanf $FILEPATH")
             print("- \\scant: End the conversation.")
             continue
